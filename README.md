@@ -19,6 +19,7 @@ This is a documentation of manually setting up the New Matter MOD-t after the co
   1. Add a new non-networked printer. From the list of printers, under **Custom**, select **Custom FFF printer**.
   2. Name it `MOD-t`
   3. From the **Machine Settings** of this new printer, adjust the following **Printer Settings** (unless specified, leave everything else as defualt):
+
     ```
     X (Width): 150 mm
     Y (Depth): 100 mm
@@ -30,6 +31,7 @@ This is a documentation of manually setting up the New Matter MOD-t after the co
     G-code flavor: Marlin
     ```
   4. From the **Machine Settings** of this new printer, adjust the following **Printhead Settings** (unless specified, leave everything else as default):
+
     ```
     X min: -20 mm
     Y min: -10 mm
@@ -40,6 +42,7 @@ This is a documentation of manually setting up the New Matter MOD-t after the co
     Shared Heater: unchecked
     ```
   5. For **Start G-code**, use the following:
+
     ```
     G90
     G1 F300 Z1
@@ -60,6 +63,7 @@ This is a documentation of manually setting up the New Matter MOD-t after the co
     G92 E0
     ```
   6. For **End G-code**, use the following:
+
     ```
     G92 E0
     G1 E-2 F200 ; Retract the filament a bit before lifting the nozzle, to release some of the pressure
@@ -70,6 +74,7 @@ This is a documentation of manually setting up the New Matter MOD-t after the co
     M84 ; Motors off
     ```
   7. Under **Extruder 1**, adjust the following (unless specified, leave everything else as default):
+
     ```
     Nozzle size: 0.4 mm
     Compatible material diameter: 1.75 mm
