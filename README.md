@@ -18,18 +18,17 @@ This is a documentation of manually setting up the New Matter MOD-t after the co
 4. Configure Cura:
     1. Add a new non-networked printer. From the list of printers, under **Custom**, select **Custom FFF printer**.
     2. Name it `MOD-t`
-    3. From the **Machine Settings** of this new printer, adjust the following **Printer Settings** (unless specified, leave everything else as defualt):
-
-      ```
-      X (Width): 150 mm
-      Y (Depth): 100 mm
-      Z (Height): 125 mm
-      Build plate shape: Rectangular
-      Origin at center: checked
-      Heated bed: unchecked
-      Heated build volume: unchecked
-      G-code flavor: Marlin
-      ```
+    3. From the **Machine Settings** of this new printer, adjust the following **Printer Settings** (unless specified, leave everything else as default):
+        ```
+        X (Width): 150 mm
+        Y (Depth): 100 mm
+        Z (Height): 125 mm
+        Build plate shape: Rectangular
+        Origin at center: checked
+        Heated bed: unchecked
+        Heated build volume: unchecked
+        G-code flavor: Marlin
+        ```
     4. From the **Machine Settings** of this new printer, adjust the following **Printhead Settings** (unless specified, leave everything else as default):
 
       ```
