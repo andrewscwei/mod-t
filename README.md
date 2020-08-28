@@ -39,36 +39,8 @@ This is a documentation of manually setting up the New Matter MOD-t after the co
         Number of Extruders: 1
         Shared Heater: unchecked
         ```
-    5. For **Start G-code**, use the following:
-        ```
-        G90
-        G1 F300 Z1
-        G1 F5000 X77 Y26
-        G1 F300 Z0.315
-        G92 E0
-        G1 F2520 X77 Y-45 E4
-        G1 F2520 X77.5 Y-45 E4.05
-        G1 F2520 X77.5 Y26 E8
-        G1 F5000 X77.25 Y26
-        G92 E0
-        G1 F2520 X77.25 Y-45 E4
-        G1 F2520 X77.75 Y-45 E4.05
-        G1 F2520 X77.75 Y26 E8
-        G1 F5000 X77 Y0
-        G1 F300 Z1
-        G1 X0 Y0 F5000
-        G92 E0
-        ```
-    6. For **End G-code**, use the following:
-        ```
-        G92 E0
-        G1 E-2 F200 ; Retract the filament a bit before lifting the nozzle, to release some of the pressure
-        G1 Z127 F300
-        G0 X0 Y35 F3000 ; Move build tray front and center, Leave room to remove build surface
-        M104 S0
-        M107 ; Fan Off
-        M84 ; Motors off
-        ```
+    5. For **Start G-code**, use included [`start.gcode`](gcodes/start.gcode).
+    6. For **End G-code**, use included [`end.gcode`](gcodes/end.gcode).
     7. Under **Extruder 1**, adjust the following (unless specified, leave everything else as default):
         ```
         Nozzle size: 0.4 mm
